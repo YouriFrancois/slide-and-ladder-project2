@@ -12,6 +12,95 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>game part</h1>
+
+      <div id='message'> </div>
+
+<!-- auth -->
+<form id="sign-up">
+<fieldset>
+<legend> sign up </legend>
+<input type="text" name="credentials[email]" placeholder="email">
+<input type="password" name="credentials[password]" placeholder="password">
+<input type="password" name="credentials[password_confirmation]" placeholder="confirm password">
+<button type = "submit" value="sign up" >sign up</button>
+</fieldset>
+</form>
+           <!--        sec form -->
+<form id="sign-in" >
+<fieldset>
+<legend> sign in </legend>
+<input type="text" name="credentials[email]" placeholder="email">
+<input type="password" name="credentials[password]" placeholder="password">
+<button type = "submit" value="sign up" >sign in</button>
+</fieldset>
+</form>
+
+<!-- chang pwd -->
+<form id="change-password" >
+<fieldset>
+<legend> change password </legend>
+<input type="password" name="passwords[old]" placeholder="old password">
+<input type="password" name="passwords[new]" placeholder="new password">
+<input type = "submit" value="change">
+</fieldset>
+</form>
+<!--  -->
+
+<div  >
+<button id="view-game"  > viewgame </button>
+<div id="show-game" class="content" > </div>
+
+
+</div>
+
+<!-- game  -->
+<button id="new-game"  > new game  </button>
+</br> </br>
+
+<button id="forward-1"  > hop 1 </button>
+<button id="forward-2"  > hop 2 </button>
+<button id="forward-3"  > hop 3 </button>
+ </br>
+
+ <div id='gameboard'>
+  <div class="container">
+    <div class="row">
+
+      <div id='0' class="col-3 box "> end </div>
+      <div id='1' class="col-3 box "> </div>
+      <div id='2' class="col-3 box "> </div>
+      <div id='3' class="col-3 box "> </div>
+      <div id='4' class="col-3 box "> </div>
+      <div id='5' class="col-3 box "> </div>
+      <div id='6' class="col-3 box "> </div>
+      <div id='7' class="col-3 box "> </div>
+      <div id='8' class="col-3 box "> </div>
+      <div id='9' class="col-3 box "> </div>
+      <div id='10' class="col-3 box ">  </div>
+      <div id='11' class="col-3 box ">  </div>
+      <div id='12' class="col-3 box ">  </div>
+      <div id='13' class="col-3 box ">  </div>
+      <div id='14' class="col-3 box ">  </div>
+      <div id='15' class="col-3 box ">  </div>
+      <div id='16' class="col-3 box ">  </div>
+      <div id='17' class="col-3 box ">  </div>
+      <div id='18' class="col-3 box ">  </div>
+      <div id='19' class="col-3 box ">  </div>
+      <div id='20' class="col-3 box ">  </div>
+      <div id='21' class="col-3 box ">  </div>
+      <div id='22' class="col-3 box "> 22 </div>
+      <div id='23' class="col-3 box ">  </div>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div> </div><div> </div><div> </div>
+
     </body>
 </html>

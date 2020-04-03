@@ -1,0 +1,20 @@
+{{#each games as |game|}}
+  {{log game}}
+  <section class="show" data-id="{{game.id}}">
+      {{log i}}
+    <h6>game id:</h6>
+    <h3>
+      <h6>x is at :</h6>
+      {{ game.Xis }}
+      <br>
+        <h6>o is at :</h6>
+      {{  game.Ois }}
+  <h6>it is  :</h6>
+        {{game.turn}}
+    </h3>
+    <h6> turn </h6>
+
+    <button class="btn-ondelete" data-id="{{game.id}}"> Delete game </button>
+  </section>
+
+{{/each}}
