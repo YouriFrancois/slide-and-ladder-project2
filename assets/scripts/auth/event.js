@@ -31,15 +31,20 @@ api.changePassword(data)
 
 const onSignOut = function (event) {
   event.preventDefault()
-data = getFormFields(event.target)
-api.signOut(data)
+
+api.signOut()
 .then(ui.signOutSuccess)
 .catch(ui.signOutFailure)
+}
+
+const onshowpass =function (){
+  ui.passDiv()
 }
 
 module.exports = {
   onSignUp,
   onSignIn,
 onChangePassword,
-onSignOut
+onSignOut,
+onshowpass
 }

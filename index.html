@@ -1,106 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+  <title>Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <h1>game part</h1>
+  <!-- Do not add `link` tags-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <div id='message'> </div>
+  <!-- Do not add `script` tags-->
+  <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
 
-<!-- auth -->
-<form id="sign-up">
-<fieldset>
-<legend> sign up </legend>
-<input type="text" name="credentials[email]" placeholder="email">
-<input type="password" name="credentials[password]" placeholder="password">
-<input type="password" name="credentials[password_confirmation]" placeholder="confirm password">
-<button type = "submit" value="sign up" >sign up</button>
-</fieldset>
-</form>
-           <!--        sec form -->
-<form id="sign-in" >
-<fieldset>
-<legend> sign in </legend>
-<input type="text" name="credentials[email]" placeholder="email">
-<input type="password" name="credentials[password]" placeholder="password">
-<button type = "submit" value="sign up" >sign in</button>
-</fieldset>
-</form>
-
-<!-- chang pwd -->
-<form id="change-password" >
-<fieldset>
-<legend> change password </legend>
-<input type="password" name="passwords[old]" placeholder="old password">
-<input type="password" name="passwords[new]" placeholder="new password">
-<input type = "submit" value="change">
-</fieldset>
-</form>
-<!--  -->
-
-<div  >
-<button id="view-game"  > viewgame </button>
-<div id="show-game" class="content" > </div>
+<body>
+  <h1> welcome to my game </h1>
 
 
-</div>
+  <!-- ************************** button **********************************8** -->
 
-<!-- game  -->
-<button id="new-game"  > new game  </button>
-</br> </br>
+  <div id="buttonDiv">
+    <button id="view-game" class="but1"> viewgame </button>
+    <button id="new-game" class="but1"> new game </button>
+    <button id="changepwd" class="but1"> change password </button>
+    <button id="log-out" class="but1"> logout </button>
+  </div>
+  <!-- ****************************** -->
 
-<button id="forward-1"  > hop 1 </button>
-<button id="forward-2"  > hop 2 </button>
-<button id="forward-3"  > hop 3 </button>
- </br>
+  <div id='message'> </div>
+  <!-- ******************************** sign *************************************-->
+  <div id="signupDiv">
 
- <div id='gameboard'>
-  <div class="container">
-    <div class="row">
-
-      <div id='0' class="col-3 box "> end </div>
-      <div id='1' class="col-3 box "> </div>
-      <div id='2' class="col-3 box "> </div>
-      <div id='3' class="col-3 box "> </div>
-      <div id='4' class="col-3 box "> </div>
-      <div id='5' class="col-3 box "> </div>
-      <div id='6' class="col-3 box "> </div>
-      <div id='7' class="col-3 box "> </div>
-      <div id='8' class="col-3 box "> </div>
-      <div id='9' class="col-3 box "> </div>
-      <div id='10' class="col-3 box ">  </div>
-      <div id='11' class="col-3 box ">  </div>
-      <div id='12' class="col-3 box ">  </div>
-      <div id='13' class="col-3 box ">  </div>
-      <div id='14' class="col-3 box ">  </div>
-      <div id='15' class="col-3 box ">  </div>
-      <div id='16' class="col-3 box ">  </div>
-      <div id='17' class="col-3 box ">  </div>
-      <div id='18' class="col-3 box ">  </div>
-      <div id='19' class="col-3 box ">  </div>
-      <div id='20' class="col-3 box ">  </div>
-      <div id='21' class="col-3 box ">  </div>
-      <div id='22' class="col-3 box "> 22 </div>
-      <div id='23' class="col-3 box ">  </div>
-
-    </div>
+    <form id="sign-up">
+      <fieldset>
+        <legend> sign up </legend>
+        <input type="text" name="credentials[email]" placeholder="email">
+        <input type="password" name="credentials[password]" placeholder="password">
+        <input type="password" name="credentials[password_confirmation]" placeholder="confirm password">
+        <button type="submit" class="but1" value="sign up">sign up</button>
+      </fieldset>
+    </form>
+    <!--        sec form -->
+    <form id="sign-in">
+      <fieldset>
+        <legend> sign in </legend>
+        <input type="text" name="credentials[email]" placeholder="email">
+        <input type="password" name="credentials[password]" placeholder="password">
+        <button type="submit" class="but1" value="sign up">sign in</button>
+      </fieldset>
+    </form>
+  </div>
+  <!--********************************* chang pwd ******************************-->
+  <div id="pwdiv">
+    <form id="change-password">
+      <fieldset>
+        <legend> change password </legend>
+        <input type="password" name="passwords[old]" placeholder="old password">
+        <input type="password" name="passwords[new]" placeholder="new password">
+        <input type="submit"  class="but1" value="change">
+      </fieldset>
+    </form>
   </div>
 
+  <!-- ******************************show game******************************** -->
+  <div id="statDiv">
+    <div id="show-game" class="content"> </div>
+  </div>
+  <!-- ***************************** game ********************************** -->
 
-</div>
+  </br>
+  <div id='gameboard'>
+    <button id="forward-1"> hop 1 </button>
+    <button id="forward-2"> hop 2 </button>
+    <button id="forward-3"> hop 3 </button>
+    </br>
+
+    <div id='gamemesage'> </div>
+    <div class="container">
+      <div class="row">
+
+        <div id='0' class="col-3 box "> end </div>
+        <div id='1' class="col-3 box "> 1</div>
+        <div id='2' class="col-3 box "> 2</div>
+        <div id='3' class="col-3 box "> 3</div>
+        <div id='4' class="col-3 box "> 4</div>
+        <div id='5' class="col-3 box "> 5</div>
+        <div id='6' class="col-3 box "> 6</div>
+        <div id='7' class="col-3 box "> 7</div>
+        <div id='8' class="col-3 box "> 8</div>
+        <div id='9' class="col-3 box "> 9</div>
+        <div id='10' class="col-3 box "> 10</div>
+        <div id='11' class="col-3 box "> 11</div>
+        <div id='12' class="col-3 box "> 12 </div>
+        <div id='13' class="col-3 box "> 13</div>
+        <div id='14' class="col-3 box "> 14</div>
+        <div id='15' class="col-3 box "> 15</div>
+        <div id='16' class="col-3 box "> 16</div>
+        <div id='17' class="col-3 box "> 17</div>
+        <div id='18' class="col-3 box "> 18</div>
+        <div id='19' class="col-3 box "> 19</div>
+        <div id='20' class="col-3 box "> 20</div>
+        <div id='21' class="col-3 box "> 21 </div>
+        <div id='22' class="col-3 box "> 22 </div>
+        <div id='23' class="col-3 box "> 23 </div>
+      </div>
+    </div>
+  </div>
+<footer>
+  <br/>  <br/>
+
+  <br/>  <br/>
+</footer>
 
 
+</body>
 
-<div> </div><div> </div><div> </div>
-
-    </body>
 </html>

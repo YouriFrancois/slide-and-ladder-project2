@@ -13,26 +13,36 @@ $font-color: $light;
   justify-content: center;
 }
 
+.Xtil {
+  background-color: red;
+  color: white;
+}
 
-  .Xtil{
-     background-color: red;
-      color: white;
+.Otil {
+  background-color: blue;
+  color: white;
+}
 
-    }
-    .Otil{
-        background-color: blue;
-        color: white;
+.content {
+  @include make-row;
+  margin-right: 50px;
+}
 
-    }
+.show {
+  margin: 20px;
+  border-style: groove;
+  border-radius: 12px;
+  background-color: #e7e7e7;
+}
 
+.but1{
+  background-color: #008CBA;
+  font-size: 20px;
+  border-radius: 12px;
+}
 
-    .content{
-      @include make-row;
-      margin-right: 50px;
-    }
-
-
-    .show{
-        margin: 20px;
-        
-    }
+.but2{
+  background-color: #f44336;
+  font-size: 20px;
+  border-radius: 12px;
+}
