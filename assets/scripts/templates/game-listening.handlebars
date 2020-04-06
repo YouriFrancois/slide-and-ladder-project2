@@ -3,15 +3,15 @@
 {{#each games as |game|}}
 
   <section class="show " data-id="{{game.id}}" data-game="{{game}}">
-    <h6>game id : {{ game.id }}</h6>
-    <h6>user: {{game.user.email }}</h6>
+    <h5>game id : {{ game.id }}</h5>
+    <h5>user: {{game.user.email }}</h5>
     <h3>
-      <h6>x is at   : {{ game.Xis }}  |</h6>
-      <h6>o is at   : {{ game.Ois }}  |</h6>
-      <h6>it is     :   {{game.turn}} turn</h6>
-      <h6>game over :{{game.over}}    |</h6>
+      <h5>x is at   : {{ game.Xis }}  |</h5>
+      <h5>o is at   : {{ game.Ois }}  |</h5>
+      <h5>it is     :   {{game.turn}} turn</h5>
+      <h5>game over :{{game.over}}    |</h5>
     </h3>
-    <h6>  </h6>
+    <h5>  </h5>
 
     <button class="btn-ondelete but2" data-id="{{game.id}}"> Delete game </button>
     <button class="oncontinue but1" data-game="{{game}}" data-id="{{game.id}}" data-ois="{{game.Ois}}" data-xis="{{game.Xis}}" data-over="{{game.over}}" data-turn="{{game.turn}}"> continue </button>

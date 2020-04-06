@@ -2,15 +2,45 @@
 $alt-color: $cyan;
 $body-bg-color: $gray-200;
 $font-color: $light;
+$color3: #f6774f;
+//$gradient: -webkit-linear-gradient(left, orange , brown, yellow, violet);
+
+body{
+font-family: 'Raleway', sans-serif;
+background-color: #FFFBDD;
+text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  margin-top:50px;
+  background: red;
+      background: -webkit-linear-gradient(left, orange , brown, yellow, violet);
+      background: -o-linear-gradient(right, orange, brown, yellow, violet);
+      background: -moz-linear-gradient(right, orange, brown, yellow, violet);
+      background: linear-gradient(to right, orange , brown, yellow, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 43px;
+
+}
+
+.legend1{
+  text-align: left;
+    font-size: 23px;
+}
 
 .box {
   align-items: center;
-  background-color: $secondary;
+  //background-color: $secondary;
   border: 1px solid $white;
   color: $font-color;
   display: flex;
   height: 100px;
   justify-content: center;
+//  background: red;
+     background: #DBBE46;
+
 }
 
 .Xtil {
@@ -30,19 +60,72 @@ $font-color: $light;
 
 .show {
   margin: 20px;
+  padding: 10px;
   border-style: groove;
   border-radius: 12px;
-  background-color: #e7e7e7;
+  color:white;
+ background: #DBBE46;
+ font-weight: bold;
+
+}
+// +======================= button ===========
+.but1{
+  border-radius: 10em;
+  border: 2px solid $color3;
+  color: $color3;
+  margin: 1rem;
+  padding: 0;
+  text-transform: uppercase;
+    overflow: hidden;
+  width: 150px;
+  height: 45px;
 }
 
-.but1{
-  background-color: #008CBA;
-  font-size: 20px;
-  border-radius: 12px;
+button:hover{
+    background-color: $color3;
+    color:white;
 }
 
 .but2{
+  border-radius: 10em;
+  border: 2px solid red;
+  color:black;
+  margin: 1rem;
+  padding: 0;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 150px;
+  height: 45px;
   background-color: #f44336;
-  font-size: 20px;
-  border-radius: 12px;
 }
+
+// ============= form ==========================
+.form1{
+ max-width:800px;
+ margin:2rem auto;
+ border:4px solid #CA801B;
+ padding:2rem;
+ border-radius:5px;
+}
+//====================== img=================
+.imgdiv{
+  left: 55%;
+  position: fixed;
+  pointer-events: none;
+  bottom: 20px;
+}
+//================== message ==================
+.goodmesage{
+  background-color: $color3;
+  color:white;
+}
+
+.badmesage{
+  background-color: red;
+  color:black;
+}
+.wintile{
+  background-color: #f5ff0d;
+    color:black;
+}
+//===============================================

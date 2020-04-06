@@ -11,10 +11,11 @@
   <!-- Do not add `script` tags-->
   <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
   <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1> welcome to my game </h1>
+  <h1 class="title"> Chutes & Ladders </h1>
 
 
   <!-- ************************** button **********************************8** -->
@@ -22,7 +23,7 @@
   <div id="buttonDiv">
     <button id="view-game" class="but1"> viewgame </button>
     <button id="new-game" class="but1"> new game </button>
-    <button id="changepwd" class="but1"> change password </button>
+    <button id="changepwd" class="but1"> new Pwrd </button>
     <button id="log-out" class="but1"> logout </button>
   </div>
   <!-- ****************************** -->
@@ -31,9 +32,9 @@
   <!-- ******************************** sign *************************************-->
   <div id="signupDiv">
 
-    <form id="sign-up">
+    <form id="sign-up" class="form1">
       <fieldset>
-        <legend> sign up </legend>
+        <legend class="title legend1"> sign up </legend>
         <input type="text" name="credentials[email]" placeholder="email">
         <input type="password" name="credentials[password]" placeholder="password">
         <input type="password" name="credentials[password_confirmation]" placeholder="confirm password">
@@ -41,20 +42,27 @@
       </fieldset>
     </form>
     <!--        sec form -->
-    <form id="sign-in">
+    <form id="sign-in" class="form1">
       <fieldset>
-        <legend> sign in </legend>
+        <legend class="title legend1"> sign in </legend>
         <input type="text" name="credentials[email]" placeholder="email">
         <input type="password" name="credentials[password]" placeholder="password">
         <button type="submit" class="but1" value="sign up">sign in</button>
       </fieldset>
     </form>
+
+    <div class="imgdiv">
+  <!-- <iframe src="https://giphy.com/embed/10adIhttJ9ovYc" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+  <iframe src="https://giphy.com/embed/8ZbqdTqYtAYaQHuDKy" width="429" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+     </div>
   </div>
+<!--    -->
+
   <!--********************************* chang pwd ******************************-->
   <div id="pwdiv">
-    <form id="change-password">
+    <form id="change-password" class="form1">
       <fieldset>
-        <legend> change password </legend>
+        <legend class="title legend1"> change password </legend>
         <input type="password" name="passwords[old]" placeholder="old password">
         <input type="password" name="passwords[new]" placeholder="new password">
         <input type="submit"  class="but1" value="change">
@@ -70,16 +78,16 @@
 
   </br>
   <div id='gameboard'>
-    <button id="forward-1"> hop 1 </button>
-    <button id="forward-2"> hop 2 </button>
-    <button id="forward-3"> hop 3 </button>
+    <button id="forward-1" class="but1"> hop 1 </button>
+    <button id="forward-2" class="but1"> hop 2 </button>
+    <button id="forward-3" class="but1"> hop 3 </button>
     </br>
 
     <div id='gamemesage'> </div>
     <div class="container">
       <div class="row">
 
-        <div id='0' class="col-3 box "> end </div>
+        <div id='0' class="col-3 box title"> end </div>
         <div id='1' class="col-3 box "> 1</div>
         <div id='2' class="col-3 box "> 2</div>
         <div id='3' class="col-3 box "> 3</div>

@@ -41,7 +41,9 @@ const showstatus = function(data) {
   hideDiv()
   $('#statDiv').show()
   $('#buttonDiv').show()
-$('#message').html('<h2>all game save  </h2>')
+$('#message').html('<h2> all saved games  </h2>')
+$('#message').removeClass()
+$('#message').addClass('goodmesage')
   const showGameHtml = showgamesTemplate({
     games: data.games
   })
@@ -55,15 +57,22 @@ const newGame = function(num) {
   $('#buttonDiv').show()
   for (let i = 0; i < num; i++) {
     $('#' + i).removeClass()
-    $("#" + i).addClass("col-3 box")
+    $("#" + i).addClass("col-3 box ")
     $('#' + i).html('')
   }
+  $('#0').removeClass()
+  $("#0").addClass("col-3 box wintile ")
+  $('#0').html('finish ')
+
+  $('#23').removeClass()
+  $("#23").addClass("col-3 box  ")
+  $('#23').html('start ')
     $('#gamemesage').html('<h2> player 1(X) turn </h2>')
 }
 
 
 const newGameSuccess = function(data) {
-  $('#message').html("new game succesfully")
+  $('#message').html("<h2> new game succesful </h2>")
   store.game = data.game
 }
 
