@@ -2,32 +2,30 @@
 $alt-color: $cyan;
 $body-bg-color: $gray-200;
 $font-color: $light;
-$color3: #f6774f;
-//$gradient: -webkit-linear-gradient(left, orange , brown, yellow, violet);
+$color3: #f6774f; //$gradient: -webkit-linear-gradient(left, orange , brown, yellow, violet);
 
-body{
-font-family: 'Raleway', sans-serif;
-background-color: #FFFBDD;
-text-transform: uppercase;
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #FFFBDD;
+  text-transform: uppercase;
 }
 
 .title {
   text-align: center;
-  margin-top:50px;
+  margin-top: 50px;
   background: red;
-      background: -webkit-linear-gradient(left, orange , brown, yellow, violet);
-      background: -o-linear-gradient(right, orange, brown, yellow, violet);
-      background: -moz-linear-gradient(right, orange, brown, yellow, violet);
-      background: linear-gradient(to right, orange , brown, yellow, violet);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 43px;
-
+  background: -webkit-linear-gradient(left, orange , brown, yellow, violet);
+  background: -o-linear-gradient(right, orange, brown, yellow, violet);
+  background: -moz-linear-gradient(right, orange, brown, yellow, violet);
+  background: linear-gradient(to right, orange , brown, yellow, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 43px;
 }
 
-.legend1{
+.legend1 {
   text-align: left;
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .box {
@@ -37,10 +35,8 @@ text-transform: uppercase;
   color: $font-color;
   display: flex;
   height: 100px;
-  justify-content: center;
-//  background: red;
-     background: #DBBE46;
-
+  justify-content: center; //  background: red;
+  background: #DBBE46;
 }
 
 .Xtil {
@@ -63,33 +59,33 @@ text-transform: uppercase;
   padding: 10px;
   border-style: groove;
   border-radius: 12px;
-  color:white;
- background: #DBBE46;
- font-weight: bold;
-
+  color: white;
+  background: #DBBE46;
+  font-weight: bold;
 }
 // +======================= button ===========
-.but1{
+
+.but1 {
   border-radius: 10em;
   border: 2px solid $color3;
   color: $color3;
   margin: 1rem;
   padding: 0;
   text-transform: uppercase;
-    overflow: hidden;
+  overflow: hidden;
   width: 150px;
   height: 45px;
 }
 
-button:hover{
-    background-color: $color3;
-    color:white;
+button:hover {
+  background-color: $color3;
+  color: white;
 }
 
-.but2{
+.but2 {
   border-radius: 10em;
   border: 2px solid red;
-  color:black;
+  color: black;
   margin: 1rem;
   padding: 0;
   text-transform: uppercase;
@@ -98,34 +94,43 @@ button:hover{
   height: 45px;
   background-color: #f44336;
 }
-
 // ============= form ==========================
-.form1{
- max-width:800px;
- margin:2rem auto;
- border:4px solid #CA801B;
- padding:2rem;
- border-radius:5px;
+.form1 {
+  max-width: 800px;
+  margin: 2rem auto;
+  border: 4px solid #CA801B;
+  padding: 2rem;
+  border-radius: 5px;
 }
 //====================== img=================
-.imgdiv{
+
+.imgdiv {
   left: 55%;
   position: fixed;
   pointer-events: none;
   bottom: 20px;
 }
 //================== message ==================
-.goodmesage{
+
+.goodmesage {
   background-color: $color3;
-  color:white;
+  color: white;
 }
 
-.badmesage{
+.badmesage {
   background-color: red;
-  color:black;
+  color: black;
 }
-.wintile{
+
+.wintile {
   background-color: #f5ff0d;
-    color:black;
+  color: black;
 }
 //===============================================
+
+.hadlebardiv {
+  background-color: #f5ff0d;
+  color: black;
+  margin-left: 50px;
+  font-size: 33px;
+}
