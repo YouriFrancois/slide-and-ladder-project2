@@ -15,6 +15,7 @@ const hideDiv = function() {
 
 
 const moveX = function(isx, wasX) {
+
   $('#' + wasX).removeClass()
   $("#" + wasX).addClass("col-3 box ")
   $('#' + wasX).html('')
@@ -23,6 +24,7 @@ const moveX = function(isx, wasX) {
     $('#gamemesage').html('<h2> player 2(O) turn </h2>')
 }
 const moveO = function(isx, wasX) {
+
   $('#' + wasX).removeClass()
   $("#" + wasX).addClass("col-3 box ")
   $('#' + wasX).html('')
@@ -31,10 +33,10 @@ const moveO = function(isx, wasX) {
     $('#gamemesage').html('<h2> player 1(X)  turn </h2>')
 }
 const goodmove = function() {
-$('#message').html('<h2>ladder up </h2>')
+$('#gamemesage2').html('<h2>ladder up </h2>')
 }
 const badmove = function() {
-$('#message').html('<h2> slide down </h2>')
+$('#gamemesage2').html('<h2> slide down </h2>')
 }
 //================ api part ========================================
 const showstatus = function(data) {
