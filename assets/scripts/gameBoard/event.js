@@ -115,6 +115,7 @@ play = !over
   store.game = {
     id
   }
+  //
   ui.newGame(24)
   api.updateGame(sendData(isx, iso, !play, turnx))
     .catch(ui.badupdate)
